@@ -1,0 +1,116 @@
+@import compass
+@import compass/reset
+//configurable variables needs to be added before blueprint import
+@import blueprint
+@import blueprint/liquid
+@import blueprint/link-icons
+
+//variables - color definitions etc
+$black: #000
+$white: #fff
+$red: #f00
+$image-logo: url("/images/blue.png")
+$top_nav:    url("/images/top_nav.png")
+$middle_nav: url("/images/middle_nav.png")
+$bottom_nav: url("/images/bottom_nav.png")
+$light-color: #54d9ff
+
+//global reset based on Eric Meyer's reset 2.0
++global-reset
++blueprint-liquid-grid
+
+body
+  background-color: black
+  +blueprint(true)
+  a
+    text-decoration: none
+
+#container
+  +container
+  +showgrid
+  .hr
+    +column(24)
+
+#header
+  height: 50px
+  background-color: $black
+  +column(24)
+
+#header2
+  +column(24)
+  height: 10px
+  background-color: white
+
+#header3
+  +column(24)
+  background-color: $black
+  #left_top
+    +column(9)
+    +colborder
+  #right_top
+    +column(14)
+    p
+      margin-top: 20px
+      color: white
+
+#content
+  height: 400px
+  background-color: $white
+  +column(24)
+
+#footer
+  +column(24)
+  height: 50px
+  background-color: $black
+
+#nav
+  +column(24)
+  height: 70px
+  background-image: $black
+  +no-bullet
+  +horizontal-list(40px)
+  +push(1)
+  a
+    +hover-link
+    +blueprint-typography-body(30px)
+    color: $white
+
+    img
+      position: absolute
+      margin-left: -60px
+  .hr
+    +column(24)
+
+
+#attention
+  +loud
+  :background $black
+  padding: 5px
+  font-weight: bold
+  :color $black
+  &:hover
+    text-decoration: underline
+
+#amidev-logo
+  background-image: $image-logo
+  display: block
+  height: 108px
+  text-indent: -9999px
+  width: 433px
+  float: left
+  margin-top: 20px
+
+.gradient_content
+  height: 20px
+  background: black
+
+.ex
+  +column(24)
+  height: 20px
+  +clearfix
+
+#v-gradient
+  +background-image(linear-gradient($black, $white))
+
+#b-gradient
+  +background-image(linear-gradient($white, $black))
