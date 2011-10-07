@@ -139,13 +139,11 @@ body
   +column(24)
   height: 40px
   border: 1px solid $blue
-  text-align: center
   +border-bottom-radius(6px)
-
 #footer_text
-  color: $white
-  font-size: 25px
-  +hover-link
+   color: $white
+   font-size: 15px
+   +hover-link
 
 #nav
   +column(24)
