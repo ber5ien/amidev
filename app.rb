@@ -17,6 +17,18 @@ get '/' do
   haml :index, :layout => :'layouts/application'
 end
 
+get '/portfolio' do
+  haml :portfolio, :layout => :'layouts/page'
+end
+
+get '/contact' do
+  haml :about, :layout => :'layouts/page'
+end
+
+get '/blog' do
+  haml :blog, :layout => :'layouts/page'
+end
+
 get '/about' do
   haml :about, :layout => :'layouts/page'
 end
