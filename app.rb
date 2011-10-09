@@ -22,7 +22,7 @@ get '/portfolio' do
 end
 
 get '/contact' do
-  haml :about, :layout => :'layouts/page'
+  haml :contact, :layout => :'layouts/page'
 end
 
 get '/blog' do
