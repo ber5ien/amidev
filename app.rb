@@ -32,7 +32,7 @@ post '/contact' do
   email = params[:email]
   subject = params[:subject]
   email_message = params[:email_message]
-  Pony.mail(:to => 'raf@amidev.co.uk', :from => email, :subject => subject, :body => email_message)
+  Pony.mail(:to => 'rafal.zdziech@gmail.com', :from => email, :subject => subject, :body => email_message)
 
   haml :contact, :layout => :'layouts/page'
 
