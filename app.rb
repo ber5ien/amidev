@@ -25,6 +25,17 @@ get '/contact' do
   haml :contact, :layout => :'layouts/page'
 end
 
+post '/contact' do
+  @name = params[:name]
+  @email = params[:email]
+  @subject = params[:subject]
+  @email_message = params[:email_message]
+
+  haml :contact, :layout => :'layouts/page'
+
+end
+
+
 get '/blog' do
   haml :blog, :layout => :'layouts/page'
 end

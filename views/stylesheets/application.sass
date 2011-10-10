@@ -24,10 +24,12 @@ $blue: #54d9ff
 +global-reset
 +blueprint-liquid-grid
 +blueprint
+//mixins must start from
+=blueprint-form
 
 body
   background-color: black
-  +blueprint-typography-defaults
+  +blueprint
   a
     text-decoration: none
 
@@ -132,6 +134,29 @@ body
     color: white
   h2
     color: $blue
+  a
+    color: white
+  #contact_details
+    +column(12)
+  a
+    font-style: underline
+    +hover-link
+
+  #form_box
+    +column(12)
+    display: block
+    color: white
+    form
+      margin-left: 20px
+      margin-bottom: 10px
+    fieldset
+      border: solid 1px $blue
+    .success
+      margin-top: 5px
+      margin-bottom: 5px
+      height: 15px
+    textarea
+      height: 100px
 
 #dragon
   background-image: $dragon

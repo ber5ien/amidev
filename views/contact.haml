@@ -1,5 +1,31 @@
-%h1 Contact
-%h2 Phone: (+44) 07907928536
-%h2 Email: raf@amidev.co.uk
-%h2 Twitter: @ber5ien
+#contact_details
+  %h1 Contact Details
+  %h2 Phone: (+44) 07907928536
+  %h2 Email: raf@amidev.co.uk
+  %h2
+    %a{:href => "http://www.twitter.com/#!/ber5ien", :style =>"font-color: white"} Twitter: @ber5ien
+#form_box
+  %fieldset
+    %legend Contact Form
+    %form(action = '/contact' method = "POST" name='send_email')
+      %label(for = "Name" ) Name
+      %br
+      %input(type ='text' name ='name' class = "text")
+      %br
+      %label Email
+      %br
+      %input(type ='text' name ="email" class = "text")
+      %br
+      %label Subject
+      %br
+      %input(type = 'text' name ="subject" class = "text")
+      %br
+      %label Message
+      %br
+      %textarea(name = "email_message")
+      %br
+      %input(type = "submit")
+  .success
+    %p Your Email has been sent.
+
 
