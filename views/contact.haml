@@ -8,7 +8,7 @@
   %fieldset
     %legend Contact Form
     %form(action = '/contact' method = "POST" name='send_email')
-      %label(for = "Name" ) Name
+      %label(for = "name" ) Name
       %br
       %input(type ='text' name ='name' class = "text")
       %br
@@ -24,7 +24,7 @@
       %br
       %textarea(name = "email_message")
       %br
-      %input(type = "submit")
+      %input(type = "submit" value = "Send" class = "button")
   .success
     %p Your Email has been sent.
 
