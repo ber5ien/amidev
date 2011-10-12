@@ -13,21 +13,27 @@ set :root, File.dirname(__FILE__)
 set :views, 'views'
 set :public, 'public'
 set :haml, {:format => :html5} # default Haml format is :xhtml
+master_email = "raf@amidev.co.uk"
+@active_page = 0
 
 # Application routes
 get '/' do
+  @active_page = "Home"
   haml :index, :layout => :'layouts/application'
 end
 
 get '/portfolio' do
-  haml :portfolio, :layout => :'layouts/page'
+  @active_page = "Portfolio"
+  haml :portfolio, :layout => :'layouts/application'
 end
 
 get '/contact' do
+  @active_page = "Contact"
   haml :contact, :layout => :'layouts/page'
 end
 
 post '/contact' do
+  @active_page = "Contact"
   name = params[:name]
   email = params[:email]
   subject = params[:subject]
@@ -40,7 +46,7 @@ post '/contact' do
   elsif subject.empty? || email_message.empty?
     @check = "Subject and message can not be empty."
   else
-    Pony.mail(:to => 'raf@amidev.co.uk', :from => email, :subject => subject, :body => email_message)
+    Pony.mail(:to => master_email, :from => email, :subject => subject, :body => email_message)
     @check = "Your email has been sent. Thank you."
   end
 
@@ -48,11 +54,12 @@ post '/contact' do
 
 end
 
-
 get '/blog' do
+  @active_page = "Blog"
   haml :blog, :layout => :'layouts/page'
 end
 
 get '/about' do
+  @active_page = "About"
   haml :about, :layout => :'layouts/page'
 end

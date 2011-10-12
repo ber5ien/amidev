@@ -1,19 +1,39 @@
 #nav
   %u
     %li
-      %a{:href => "/"}
-        %img{:src => "/images/icons/home.png", :alt => "Home", :title => "Home"} Home
+      - if @active_page == "Home"
+        %a{:href => "/", :class => "active_page"}
+          %img{:src => "/images/icons/home.png", :alt => "Home", :title => "Home"} Home
+        - @active_page = 0
+      - else
+        %a{:href => "/"}
+          %img{:src => "/images/icons/home.png", :alt => "Home", :title => "Home"} Home
     %li
-      %a{:href => "/portfolio"}
-        %img{:src => "/images/icons/world.png", :alt => "Portfolio", :title =>"Portfolio"} Portfolio
+      - if @active_page == "Portfolio"
+        %a{:href => "/portfolio", :class => "active_page"}
+          %img{:src => "/images/icons/world.png", :alt => "Portfolio", :title =>"Portfolio"} Portfolio
+      - else
+        %a{:href => "/portfolio"}
+          %img{:src => "/images/icons/world.png", :alt => "Portfolio", :title =>"Portfolio"} Portfolio
     %li
-      %a{:href => "/contact", :id => "attention"}
-        %img{:src => "/images/icons/post.png", :alt => "Contact", :title => "Contact"} Contact
+      - if @active_page == "Contact"
+        %a{:href => "/contact", :class =>"active_page", :id => "attention"}
+          %img{:src => "/images/icons/post.png", :alt => "Contact", :title => "Contact"} Contact
+      - else
+        %a{:href => "/contact", :id => "attention"}
+          %img{:src => "/images/icons/post.png", :alt => "Contact", :title => "Contact"} Contact
     %li
-      %a{:href => "/blog"}
-        %img{:src => "/images/icons/man.png", :alt => "Blog", :title => "Blog"} Blog
+      - if @active_page == "Blog"
+        %a{:href => "/blog", :class => "active_page"}
+          %img{:src => "/images/icons/man.png", :alt => "Blog", :title => "Blog"} Blog
+      - else
+        %a{:href => "/blog"}
+          %img{:src => "/images/icons/man.png", :alt => "Blog", :title => "Blog"} Blog
     %li
-      %a{:href => "/about"}
-        %img{:src => "/images/icons/question.png", :alt => "About", :title => "About"} About
-
+      - if @active_page == "About"
+        %a{:href => "/about", :class => "active_page"}
+          %img{:src => "/images/icons/question.png", :alt => "About", :title => "About"} About
+      - else
+        %a{:href => "/about"}
+          %img{:src => "/images/icons/question.png", :alt => "About", :title => "About"} About
 
