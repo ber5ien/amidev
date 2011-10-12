@@ -10,7 +10,7 @@
     %form(action = '/contact' method = "POST" name='send_email')
       %label(for = "name" ) Name
       %br
-      %input(type ='text' name ='name' class = "text")
+      %input(type ='text' name ='name' class = "title" id = "inplace")
       %br
       %label Email
       %br
@@ -26,7 +26,7 @@
       %br
       %input(type = "submit" value = "Send" class = "button")
   - if @check
-    .success
+    .success{:id => "turnitoff"}
       %p= @check
 
 

@@ -8,3 +8,13 @@ $(document).ready(function() {
 	  .attr('target', '_blank');
 
 });
+
+$(document).ready(function() {
+ window.setTimeout(function(){
+                          $('#turnitoff').fadeOut();
+ }, 5000);
+});
+
+$(document).ready(function() {
+  $("#inplace").focus();
+});
