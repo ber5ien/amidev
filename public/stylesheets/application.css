@@ -2813,6 +2813,9 @@ body a {
   height: 15px;
   font-size: 14px;
 }
+#content #form_box .success p {
+  color: black;
+}
 #content #form_box textarea {
   height: 80px;
 }
