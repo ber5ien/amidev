@@ -32,7 +32,17 @@ post '/contact' do
   email = params[:email]
   subject = params[:subject]
   email_message = params[:email_message]
-  Pony.mail(:to => 'rafal.zdziech@gmail.com', :from => email, :subject => subject, :body => email_message)
+
+  if name.empty? || name.length <= 3 || name !~ /\A([a-zA-Z])/
+    @check = "Name: Empty, less than 3 or contain special characters => Incorrect"
+  elsif email.empty? || email.length <= 3 || email !~ /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/
+    @check = "Your email is incorrect. This must be an email."
+  elsif subject.empty? || email_message.empty?
+    @check = "Subject and message can not be empty."
+  else
+    Pony.mail(:to => 'raf@amidev.co.uk', :from => email, :subject => subject, :body => email_message)
+    @check = "Your email has been sent. Thank you."
+  end
 
   haml :contact, :layout => :'layouts/page'
 

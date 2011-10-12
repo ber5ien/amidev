@@ -25,7 +25,9 @@
       %textarea(name = "email_message")
       %br
       %input(type = "submit" value = "Send" class = "button")
-  .success
-    %p Your Email has been sent.
+  - if @check
+    .success
+      %p= @check
+
 
 
