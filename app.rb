@@ -3,9 +3,13 @@ require 'sinatra'
 require 'haml'
 require 'net/smtp'
 require 'pony'
+require 'data_mapper'
 
 # Helpers
 require './lib/render_partial'
+
+#Models
+require './models'
 
 # Set Sinatra variables
 set :app_file, __FILE__
@@ -24,7 +28,8 @@ end
 
 get '/portfolio' do
   @active_page = "Portfolio"
-  haml :portfolio, :layout => :'layouts/application'
+  @projects = Project.all(:order => [:created_at.desc])
+  haml :portfolio, :layout => :'layouts/no_footer'
 end
 
 get '/contact' do
@@ -56,7 +61,7 @@ end
 
 get '/blog' do
   @active_page = "Blog"
-  haml :blog, :layout => :'layouts/page'
+  haml :blog, :layout => :'layouts/no_footer'
 end
 
 get '/about' do

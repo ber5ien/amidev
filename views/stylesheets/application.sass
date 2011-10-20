@@ -35,6 +35,8 @@ body
 
 #container
   +container
+  min-width: 1010px
+  min-height: 760px
 
 #header
   height: 55px
@@ -63,12 +65,11 @@ body
       margin-left: 20px
       color: white
       font-size: 14px
-  #box
+  #box_top_right
     position: absolute
     margin-left: 550px
     +border-top-radius(6px)
     border: 1px solid $blue
-    display: block
     margin-top: 20px
     max-width: 500px
     min-width: 350px
@@ -84,13 +85,11 @@ body
       color: white
       font-size: 30px
 
-#box_index
+#box_left_bottom
   position: absolute
-  display: block
   background: black
   +border-top-radius(6px)
   border: 1px solid $blue
-  float: right
   width: 220px
   margin-top: 120px
   height: 300px
@@ -109,13 +108,12 @@ body
     font-size: 14px
 
 #box_rec
-  display: block
   background: black
   +border-top-radius(6px)
   border: 1px solid $blue
-  float: right
-  width: 280px
-  margin-top: 140px
+  margin-left: 700px
+  width: 260px
+  margin-top: 190px
   height: 200px
   padding: 10px
   color: $blue
@@ -130,7 +128,6 @@ body
     font-size: 30px
 
 #content
-  height: 460px
   background-color: black
   +column(24)
   h1
@@ -147,7 +144,6 @@ body
 
   #form_box
     +column(12)
-    display: block
     color: white
     form
       margin-left: 20px
@@ -163,6 +159,24 @@ body
         color: black
     textarea
       height: 80px
+  #box
+    +border-top-radius(6px)
+    border: 1px solid $blue
+    margin-top: 50px
+    max-width: 500px
+    min-width: 350px
+    height: 180px
+    padding: 10px
+    color: $blue
+    p
+      font-size: 14px
+    a
+      color: white
+      +hover-link
+    h1
+      color: white
+      font-size: 30px
+
 
 #dragon
   background-image: $dragon

@@ -1,0 +1,28 @@
+!!!
+%html{html_attrs}
+  %head
+    %meta{:'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
+    %meta{:name => "lang", :content => "en"}
+    %title aMiDEV - Web Application Development for Normal People
+    %link{:href=>'/stylesheets/application.css', :media => "screen", :rel => 'stylesheet', :type => "text/css"}
+    %link{:href=>'/stylesheets/screen.css', :media => "screen", :rel => 'stylesheet', :type => "text/css"}
+    %link{:href=>'/stylesheets/print.css', :media => "screen", :rel => 'stylesheet', :type => "text/css"}
+    <!-- [if lt IE 8] >
+    %link{:href=>'/stylesheets/ie.css', :media => "screen", :rel => 'stylesheet', :type => "text/css"}
+    <![endif] -->
+    %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.5.min.js"}
+    %script{:type => "text/javascript", :src => "/javascripts/lib/modernizr-1.6.min.js"}
+    %script{:type => "text/javascript", :src => "/javascripts/application.js"}
+
+  %body
+    #container
+      #header
+        = partial :_nav_main
+      #bar
+      #header3
+        = partial :_header_logo
+      #bar2
+      #content
+        = yield
+
+      = partial :_analytics

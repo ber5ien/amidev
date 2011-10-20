@@ -1,2 +1,9 @@
 %h1 Portfolio
-%h2 Under construction
+- @projects.each do |project|
+  #box
+    %h2= project.title
+    %a{:href =>"#{project.link_to_web}"}= project.link_to_web
+    %hr
+    %p= project.desc
+
+
