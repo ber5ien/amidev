@@ -2724,6 +2724,7 @@ body a {
 
 #box_rec {
   background: black;
+  position: absolute;
   -moz-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
   -o-border-top-left-radius: 6px;
@@ -2737,9 +2738,9 @@ body a {
   -khtml-border-top-right-radius: 6px;
   border-top-right-radius: 6px;
   border: 1px solid #54d9ff;
-  margin-left: 700px;
+  margin-left: 680px;
   width: 280px;
-  margin-top: 190px;
+  margin-top: 150px;
   height: 200px;
   padding: 10px;
   color: #54d9ff;
