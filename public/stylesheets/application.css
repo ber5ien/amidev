@@ -2738,7 +2738,7 @@ body a {
   border-top-right-radius: 6px;
   border: 1px solid #54d9ff;
   margin-left: 700px;
-  width: 260px;
+  width: 280px;
   margin-top: 190px;
   height: 200px;
   padding: 10px;
@@ -2856,9 +2856,9 @@ body a {
 
 #dragon {
   background-image: url("/images/dragon.png");
+  display: block;
   background-repeat: no-repeat;
   height: 460px;
-  width: 100%;
 }
 
 #footer {
