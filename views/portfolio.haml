@@ -1,6 +1,7 @@
 %h1 Portfolio
 - @projects.each do |project|
   #box
+    %img{:src => "images/projects/#{project.link_to_image}", :width=>"550px", :height=>"100px", :alt => "Project photo"}
     %h2= project.title
     %a{:href =>"#{project.link_to_web}"}= project.link_to_web
     %hr
