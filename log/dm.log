@@ -4308,3 +4308,21 @@
  ~ (0.000012) PRAGMA table_info("projects")
  ~ (0.000066) SELECT "id", "title", "link_to_image", "link_to_web", "created_at" FROM "projects" ORDER BY "created_at" DESC
  ~ (0.000036) SELECT "id", "desc" FROM "projects" ORDER BY "created_at" DESC
+ ~ (0.000293) PRAGMA table_info("projects")
+ ~ (0.000021) PRAGMA table_info("projects")
+ ~ (0.000124) PRAGMA table_info("projects")
+ ~ (0.000012) PRAGMA table_info("projects")
+ ~ (0.000012) PRAGMA table_info("projects")
+ ~ (0.000012) PRAGMA table_info("projects")
+ ~ (0.000013) PRAGMA table_info("projects")
+ ~ (0.000012) PRAGMA table_info("projects")
+ ~ (0.000299) PRAGMA table_info("projects")
+ ~ (0.000017) PRAGMA table_info("projects")
+ ~ (0.000118) PRAGMA table_info("projects")
+ ~ (0.000011) PRAGMA table_info("projects")
+ ~ (0.000011) PRAGMA table_info("projects")
+ ~ (0.000011) PRAGMA table_info("projects")
+ ~ (0.000011) PRAGMA table_info("projects")
+ ~ (0.000011) PRAGMA table_info("projects")
+ ~ (0.000156) SELECT "id", "title", "link_to_image", "link_to_web", "created_at" FROM "projects" ORDER BY "created_at" DESC
+ ~ (0.000057) SELECT "id", "desc" FROM "projects" ORDER BY "created_at" DESC

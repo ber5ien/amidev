@@ -23,7 +23,7 @@ role :db, domain, :primary => true
 namespace :deploy do
   task :start, :roles => :app do
   run "touch #{current_release}/tmp/restart.txt"
-  run "chmod 777 log/dm.log"
+  run "chmod 777 /u/apps/production/amidev/current/log/dm.log"
 end
 task :stop, :roles => :app do
   # Do nothing.
