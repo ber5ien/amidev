@@ -13,18 +13,10 @@ gem "highline",         "~> 1.6.2"
 gem "meyer-reset"
 gem "grid-coordinates", "~> 1.1.4"
 gem "rb-inotify"
-gem "capistrano"
+#gem "capistrano"
 gem "railsless-deploy"
 gem "tilt"
 gem "pony"
 gem 'pg', '0.10.0'
 gem 'thin', '1.2.7'
-
-group :production do
-  gem 'dm-postgres-adapter'
-end
-
-group :development, :test do
-  gem 'dm-sqlite-adapter'
-end
 

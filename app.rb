@@ -3,7 +3,7 @@ require 'sinatra'
 require 'haml'
 require 'net/smtp'
 require 'pony'
-require 'data_mapper'
+#require 'data_mapper'
 
 # Helpers
 require './lib/render_partial'
@@ -26,11 +26,11 @@ get '/' do
   haml :index, :layout => :'layouts/application'
 end
 
-get '/portfolio' do
-  @active_page = "Portfolio"
-  @projects = Project.all(:order => [:created_at.desc])
-  haml :portfolio, :layout => :'layouts/no_footer'
-end
+#get '/portfolio' do
+#  @active_page = "Portfolio"
+#  @projects = Project.all(:order => [:created_at.desc])
+#  haml :portfolio, :layout => :'layouts/no_footer'
+#end
 
 get '/contact' do
   @active_page = "Contact"
