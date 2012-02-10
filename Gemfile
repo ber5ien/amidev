@@ -19,7 +19,7 @@ gem "railsless-deploy"
 gem "tilt"
 gem "pony"
 gem 'pg', '0.10.0'
-
+gem 'thin', '1.2.7'
 
 group :production do
   gem 'dm-postgres-adapter'
