@@ -9,7 +9,7 @@ require 'pony'
 require './lib/render_partial'
 
 #Models
-require './models'
+#require './models'
 
 # Set Sinatra variables
 set :app_file, __FILE__
