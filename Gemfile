@@ -18,5 +18,14 @@ gem "capistrano"
 gem "railsless-deploy"
 gem "tilt"
 gem "pony"
-gem "data_mapper"
-gem "dm-sqlite-adapter"
+gem 'pg', '0.10.0'
+
+
+group :production do
+  gem 'dm-postgres-adapter'
+end
+
+group :development, :test do
+  gem 'dm-sqlite-adapter'
+end
+
