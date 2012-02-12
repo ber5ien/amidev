@@ -3,13 +3,13 @@ require 'sinatra'
 require 'haml'
 require 'net/smtp'
 require 'pony'
-require 'data_mapper'
+#require 'data_mapper'
 
 # Helpers
 require './lib/render_partial'
 
 #Models
-require './models'
+#require './models'
 
 # Set Sinatra variables
 set :app_file, __FILE__
