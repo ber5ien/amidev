@@ -26,10 +26,9 @@ get '/' do
   haml :index, :layout => :'layouts/application'
 end
 
-get '/portfolio' do
-  @active_page = "Portfolio"
-  haml :blog, :layout => :'layouts/page'
-#  @active_page = "Portfolio"
+get '/ourprojects' do
+  @active_page = "Our Projects"
+  haml :ourprojects, :layout => :'layouts/no_footer'
 #  @projects = Project.all(:order => [:created_at.desc])
 #  haml :portfolio, :layout => :'layouts/no_footer'
 end
@@ -74,9 +73,9 @@ Pony.options = {
 
 end
 
-get '/blog' do
-  @active_page = "Blog"
-  haml :blog, :layout => :'layouts/no_footer'
+get '/developers' do
+  @active_page = "Developers"
+  haml :developers, :layout => :'layouts/no_footer'
 end
 
 get '/about' do

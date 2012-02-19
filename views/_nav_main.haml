@@ -9,26 +9,26 @@
         %a{:href => "/"}
           %img{:src => "/images/icons/home.png", :alt => "Home", :title => "Home"} Home
     %li
-      - if @active_page == "Portfolio"
-        %a{:href => "/portfolio", :class => "active_page"}
-          %img{:src => "/images/icons/world.png", :alt => "Portfolio", :title =>"Portfolio"} Portfolio
+      - if @active_page == "Our Projects"
+        %a{:href => "/ourprojects", :class => "active_page"}
+          %img{:src => "/images/icons/world.png", :alt => "Our Projects", :title =>"Our Projects"} Our Projects
       - else
-        %a{:href => "/portfolio"}
-          %img{:src => "/images/icons/world.png", :alt => "Portfolio", :title =>"Portfolio"} Portfolio
+        %a{:href => "/ourprojects"}
+          %img{:src => "/images/icons/world.png", :alt => "Our Projects", :title =>"Our Projects"} Our Projects
     %li
-      - if @active_page == "Contact"
+      - if @active_page == "Contact Us"
         %a{:href => "/contact", :class =>"active_page", :id => "attention"}
           %img{:src => "/images/icons/post.png", :alt => "Contact", :title => "Contact"} Contact
       - else
         %a{:href => "/contact", :id => "attention"}
           %img{:src => "/images/icons/post.png", :alt => "Contact", :title => "Contact"} Contact
     %li
-      - if @active_page == "Blog"
-        %a{:href => "/blog", :class => "active_page"}
-          %img{:src => "/images/icons/man.png", :alt => "Blog", :title => "Blog"} Blog
+      - if @active_page == "Developers"
+        %a{:href => "/developers", :class => "active_page"}
+          %img{:src => "/images/icons/man.png", :alt => "Developers", :title => "Developers"} Developers
       - else
-        %a{:href => "/blog"}
-          %img{:src => "/images/icons/man.png", :alt => "Blog", :title => "Blog"} Blog
+        %a{:href => "/developers"}
+          %img{:src => "/images/icons/man.png", :alt => "Developers", :title => "Developers"} Developers
     %li
       - if @active_page == "About"
         %a{:href => "/about", :class => "active_page"}
