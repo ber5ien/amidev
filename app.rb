@@ -46,6 +46,19 @@ post '/contact' do
   subject = params[:subject]
   email_message = params[:email_message]
 
+Pony.options = {
+  :via => :smtp,
+  :via_options => {
+    :address => 'smtp.sendgrid.net',
+    :port => '587',
+    :domain => 'heroku.com',
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
+}
+
   if name.empty? || name.length <= 3 || name !~ /\A([a-zA-Z])/
     @check = "Name: Empty, less than 3 or contain special characters => Incorrect"
   elsif email.empty? || email.length <= 3 || email !~ /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/
