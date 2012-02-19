@@ -28,8 +28,10 @@ end
 
 get '/portfolio' do
   @active_page = "Portfolio"
-  @projects = Project.all(:order => [:created_at.desc])
-  haml :portfolio, :layout => :'layouts/no_footer'
+  haml :blog, :layout => :'layouts/page'
+#  @active_page = "Portfolio"
+#  @projects = Project.all(:order => [:created_at.desc])
+#  haml :portfolio, :layout => :'layouts/no_footer'
 end
 
 get '/contact' do
