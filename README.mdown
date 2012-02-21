@@ -1,4 +1,4 @@
-## amidev.co.uk - Community Social Coding - Free Web Developemnt for communities
+## amidev.co.uk - Community Social Coding - Free Web Development for communities
 
 ##Technologies used
 1. Sinatra Bootstrap
@@ -6,6 +6,8 @@
 3. Css
 4. Compass + Blueprint (Css Framework)
 5. Vim + Linux
+6. Heroku
+7. Git
 
 ## License
 
