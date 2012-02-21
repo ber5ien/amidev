@@ -2997,7 +2997,7 @@ body h2, body h1 {
   -ms-border-top-right-radius: 6px;
   -khtml-border-top-right-radius: 6px;
   border-top-right-radius: 6px;
-  border: 1px solid #54d9ff;
+  border-bottom: 1px solid #54d9ff;
   margin-top: 20px;
   padding: 10px;
   color: #54d9ff;

@@ -26,9 +26,9 @@ get '/' do
   haml :index, :layout => :'layouts/application'
 end
 
-get '/ourprojects' do
+get '/freeprojects' do
   @active_page = "Our Projects"
-  haml :ourprojects, :layout => :'layouts/no_footer'
+  haml :freeprojects, :layout => :'layouts/no_footer'
 #  @projects = Project.all(:order => [:created_at.desc])
 #  haml :portfolio, :layout => :'layouts/no_footer'
 end
@@ -81,4 +81,8 @@ end
 get '/about' do
   @active_page = "About"
   haml :about, :layout => :'layouts/page'
+end
+
+get '/rafal_zdziech' do
+  haml :rafal_zdziech, :layout => :'layouts/page'
 end

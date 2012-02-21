@@ -9,17 +9,17 @@
         %a{:href => "/"}
           %img{:src => "/images/icons/home.png", :alt => "Home", :title => "Home"} Home
     %li
-      - if @active_page == "Our Projects"
-        %a{:href => "/ourprojects", :class => "active_page"}
-          %img{:src => "/images/icons/world.png", :alt => "Our Projects", :title =>"Our Projects"} Our Projects
+      - if @active_page == "Free Projects"
+        %a{:href => "/freeprojects", :class => "active_page"}
+          %img{:src => "/images/icons/world.png", :alt => "Free Projects", :title =>"Free Projects"} Free Projects
       - else
-        %a{:href => "/ourprojects"}
-          %img{:src => "/images/icons/world.png", :alt => "Our Projects", :title =>"Our Projects"} Our Projects
+        %a{:href => "/freeprojects"}
+          %img{:src => "/images/icons/world.png", :alt => "Free Projects", :title =>"Free Projects"} Free Projects
     %li
-      - if @active_page == "Contact Us"
+      - if @active_page == "Contact"
         %a{:href => "/contact", :class =>"active_page"}
           %img{:src => "/images/icons/post.png", :alt => "Contact", :title => "Contact"} Contact
-      - else
+      -else
         %a{:href => "/contact"}
           %img{:src => "/images/icons/post.png", :alt => "Contact", :title => "Contact"} Contact
     %li
