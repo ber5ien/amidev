@@ -1864,6 +1864,9 @@ textarea {
 body {
   background-color: black;
 }
+body p {
+  color: white;
+}
 body body {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -2583,6 +2586,9 @@ body .removed {
 body a {
   text-decoration: none;
 }
+body h2, body h1 {
+  color: #54d9ff;
+}
 
 #container {
   min-width: 950px;
@@ -2593,8 +2599,10 @@ body a {
   min-width: 1010px;
   min-height: 760px;
 }
-
-#header {
+#container p {
+  color: white;
+}
+#container #header {
   height: 55px;
   background-color: black;
   display: inline;
@@ -2603,8 +2611,7 @@ body a {
   width: 99.974%;
   margin-right: 1.042%;
 }
-
-#bar {
+#container #bar {
   display: inline;
   float: left;
   overflow: hidden;
@@ -2613,8 +2620,7 @@ body a {
   height: 10px;
   background-color: white;
 }
-
-#bar2 {
+#container #bar2 {
   display: inline;
   float: left;
   overflow: hidden;
@@ -2623,10 +2629,10 @@ body a {
   height: 10px;
   max-width: 500px;
   min-width: 400px;
+  margin-top: 20px;
   background-color: white;
 }
-
-#header3 {
+#container #header3 {
   display: inline;
   float: left;
   overflow: hidden;
@@ -2634,16 +2640,16 @@ body a {
   margin-right: 1.042%;
   background-color: black;
 }
-#header3 #under_amidev {
+#container #header3 #under_amidev {
   position: absolute;
 }
-#header3 #under_amidev p {
-  margin-top: 100px;
-  margin-left: 20px;
+#container #header3 #under_amidev p {
+  margin-top: 110px;
   color: white;
   font-size: 14px;
 }
-#header3 #box_top_right {
+
+#box_top_right {
   position: absolute;
   margin-left: 550px;
   -moz-border-radius-topleft: 6px;
@@ -2662,23 +2668,23 @@ body a {
   margin-top: 20px;
   max-width: 500px;
   min-width: 350px;
-  height: 180px;
+  height: 190px;
   padding: 10px;
   color: #54d9ff;
 }
-#header3 #box_top_right p {
+#box_top_right p {
   font-size: 14px;
 }
-#header3 #box_top_right a {
+#box_top_right a {
   color: white;
   text-decoration: none;
 }
-#header3 #box_top_right a:hover {
+#box_top_right a:hover {
   text-decoration: underline;
 }
-#header3 #box_top_right h1 {
-  color: white;
-  font-size: 30px;
+#box_top_right h1 {
+  color: #54d9ff;
+  font-size: 45px;
 }
 
 #box_left_bottom {
@@ -2700,12 +2706,13 @@ body a {
   width: 230px;
   min-width: 220px;
   margin-top: 120px;
-  height: 300px;
+  height: 310px;
   padding: 10px;
   color: #54d9ff;
 }
 #box_left_bottom p {
   font-size: 14px;
+  color: white;
 }
 #box_left_bottom a {
   color: white;
@@ -2715,12 +2722,12 @@ body a {
 #box_left_bottom a:hover {
   text-decoration: underline;
 }
-#box_left_bottom h1 {
-  color: white;
-  font-size: 30px;
-}
 #box_left_bottom li, #box_left_bottom ul {
   font-size: 14px;
+}
+#box_left_bottom h1 {
+  color: #54d9ff;
+  font-size: 50px;
 }
 
 #box_rec {
@@ -2748,6 +2755,7 @@ body a {
 }
 #box_rec p {
   font-size: 12px;
+  color: white;
 }
 #box_rec a {
   color: white;
@@ -2758,7 +2766,7 @@ body a {
   text-decoration: underline;
 }
 #box_rec h1 {
-  color: white;
+  color: #54d9ff;
   font-size: 30px;
 }
 
@@ -2771,46 +2779,48 @@ body a {
   margin-right: 1.042%;
   padding-bottom: 10px;
 }
-#content h1 {
-  color: white;
-}
-#content h2 {
-  color: #54d9ff;
-}
 #content a {
   color: white;
 }
-#content a {
+#content p {
+  color: white;
+}
+#content #contact_details {
+  color: white;
+}
+#content #contact_details a {
   font-style: underline;
   text-decoration: none;
 }
-#content a:hover {
+#content #contact_details a:hover {
   text-decoration: underline;
 }
-#content #form_box {
+
+#form_box {
   color: white;
 }
-#content #form_box form {
+#form_box form {
   margin-left: 20px;
   margin-bottom: 10px;
 }
-#content #form_box fieldset {
+#form_box fieldset {
   border: solid 1px #54d9ff;
   width: 500px;
 }
-#content #form_box .success {
+#form_box .success {
   margin-top: 5px;
   margin-bottom: 5px;
   height: 15px;
   font-size: 14px;
 }
-#content #form_box .success p {
+#form_box .success p {
   color: black;
 }
-#content #form_box textarea {
+#form_box textarea {
   height: 80px;
 }
-#content #box {
+
+#box {
   -moz-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
   -o-border-top-left-radius: 6px;
@@ -2831,30 +2841,28 @@ body a {
   padding: 10px;
   color: #54d9ff;
 }
-#content #box p {
+#box p {
   font-size: 14px;
+  color: white;
 }
-#content #box a {
+#box a {
   color: white;
   text-decoration: none;
 }
-#content #box a:hover {
+#box a:hover {
   text-decoration: underline;
 }
-#content #box hr {
+#box hr {
   width: 350px;
   margin-left: 0px;
 }
-#content #box h1 {
+#box h1 {
   color: white;
   font-size: 30px;
 }
-#content #box img {
+#box img {
   float: right;
   border: 5px solid white;
-}
-#content #about p {
-  color: white;
 }
 
 #dragon {
@@ -2868,30 +2876,21 @@ body a {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 95.765%;
+  width: 99.974%;
   margin-right: 1.042%;
-  -moz-border-radius-topleft: 6px;
-  -webkit-border-top-left-radius: 6px;
-  -o-border-top-left-radius: 6px;
-  -ms-border-top-left-radius: 6px;
-  -khtml-border-top-left-radius: 6px;
-  border-top-left-radius: 6px;
-  -moz-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -o-border-top-right-radius: 6px;
-  -ms-border-top-right-radius: 6px;
-  -khtml-border-top-right-radius: 6px;
-  border-top-right-radius: 6px;
-  padding-right: 50px;
-  border: 1px solid #54d9ff;
   text-align: center;
+  border-top: 1px solid #54d9ff;
 }
-#footer #footer_text {
+
+#footer_text {
   color: white;
   font-size: 25px;
   text-decoration: none;
 }
-#footer #footer_text:hover {
+#footer_text a {
+  font-style: underline;
+}
+#footer_text:hover {
   text-decoration: underline;
 }
 
@@ -2978,7 +2977,7 @@ body a {
 
 #amidev-logo {
   background-image: url("/images/blue.png");
-  height: 108px;
+  height: 100px;
   text-indent: -9999px;
   width: 433px;
   float: left;

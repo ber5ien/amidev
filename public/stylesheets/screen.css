@@ -188,7 +188,8 @@ body.bp thead th {
 body.bp th, body.bp td, body.bp caption {
   padding: 4px 10px 4px 5px;
 }
-body.bp table.striped tr:nth-child(even) td, body.bp table tr.even td {
+body.bp table.striped tr:nth-child(even) td,
+body.bp table tr.even td {
   background: #e5ecf9;
 }
 body.bp tfoot {

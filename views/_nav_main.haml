@@ -17,10 +17,10 @@
           %img{:src => "/images/icons/world.png", :alt => "Our Projects", :title =>"Our Projects"} Our Projects
     %li
       - if @active_page == "Contact Us"
-        %a{:href => "/contact", :class =>"active_page", :id => "attention"}
+        %a{:href => "/contact", :class =>"active_page"}
           %img{:src => "/images/icons/post.png", :alt => "Contact", :title => "Contact"} Contact
       - else
-        %a{:href => "/contact", :id => "attention"}
+        %a{:href => "/contact"}
           %img{:src => "/images/icons/post.png", :alt => "Contact", :title => "Contact"} Contact
     %li
       - if @active_page == "Developers"

@@ -1,0 +1,66 @@
+/*
+Syntax error: File to import not found or unreadable: compass.
+              Load path: /home/ami/webDevelopment/amidev/views/stylesheets
+        on line 1 of application.sass
+
+1: @import compass
+2: @import compass/reset
+3: //configurable variables needs to be added before blueprint import
+4: @import blueprint
+5: @import blueprint/liquid
+6: @import blueprint/link-icons
+
+Backtrace:
+application.sass:1
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/import_node.rb:64:in `rescue in import'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/import_node.rb:42:in `import'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/import_node.rb:25:in `imported_file'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:148:in `rescue in visit_import'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:153:in `visit_import'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `map'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/tree/root_node.rb:20:in `render'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/engine.rb:293:in `_render'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/engine.rb:240:in `render'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:169:in `block in update_stylesheets'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:167:in `each'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:167:in `update_stylesheets'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:273:in `block (4 levels) in watch'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `call'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `run_callback'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/fssm-0.2.7/lib/fssm/path.rb:55:in `callback_action'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/fssm-0.2.7/lib/fssm/path.rb:35:in `update'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/fssm-0.2.7/lib/fssm/state/file.rb:19:in `refresh'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `each'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block in run'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `loop'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `run'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/fssm-0.2.7/lib/fssm/monitor.rb:26:in `run'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/fssm-0.2.7/lib/fssm.rb:20:in `monitor'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:245:in `watch'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/plugin.rb:111:in `method_missing'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/exec.rb:408:in `watch_or_update'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/exec.rb:294:in `process_result'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/exec.rb:41:in `parse'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/lib/sass/exec.rb:21:in `parse!'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/gems/sass-3.1.7/bin/sass:8:in `<top (required)>'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/bin/sass:19:in `load'
+/home/ami/.rvm/gems/ruby-1.9.3-p125/bin/sass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass.\A               Load path: /home/ami/webDevelopment/amidev/views/stylesheets\A         on line 1 of application.sass\A \A 1: @import compass\A 2: @import compass/reset\A 3: //configurable variables needs to be added before blueprint import\A 4: @import blueprint\A 5: @import blueprint/liquid\A 6: @import blueprint/link-icons"; }
