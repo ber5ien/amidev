@@ -1,4 +1,4 @@
-## amidev.co.uk - Rafal Zdziech's (Raf) Personal Website
+## amidev.co.uk - Community Social Coding - Free Web Developemnt for communities
 
 ##Technologies used
 1. Sinatra Bootstrap
