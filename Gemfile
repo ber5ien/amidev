@@ -3,7 +3,7 @@ source :rubygems
 gem "sinatra",          "~> 1.2.3"
 gem "shotgun",          "~> 0.9"
 gem "bundler"
-gem "haml",             "~> 3.1.1"
+gem "haml",             ">= 5.0.0"
 gem "sass",             "~> 3.1.1"
 gem "compass",          "~> 0.11.5"
 gem "ffi",              "~> 1.0.9"
